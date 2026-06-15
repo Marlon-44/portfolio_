@@ -46,7 +46,7 @@ export const Header = () => {
                 <div className={styles.headerTop}>
                     <div className={styles.logoContainer}>
                         <a href="/" className={styles.logo}>
-                            <img className={styles.logoImage} src="/src/assets/17.png" alt="Logo" />
+                            <img className={styles.logoImage} src="/assets/17.png" alt="Logo" />
                         </a>
                     </div>
                     {

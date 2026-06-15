@@ -80,7 +80,7 @@ export const Banner = () => {
                 }}
             >
                 <img
-                    src="/src/assets/16.png"
+                    src="/assets/16.png"
                     alt="Marlon Almanza"
                 />
 
