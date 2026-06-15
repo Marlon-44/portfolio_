@@ -63,9 +63,7 @@ export const Banner = () => {
             </div>
 
             <div className={styles.scheme}>
-                <div className={styles.hi}>
-                    <p>Hi!</p>
-                </div>
+
             </div>
 
             <div
@@ -84,7 +82,9 @@ export const Banner = () => {
                     alt="Marlon Almanza"
                 />
 
-
+                <div className={styles.hi}>
+                    <p>Hi!</p>
+                </div>
             </div>
 
 
