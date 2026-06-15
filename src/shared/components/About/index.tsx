@@ -3,7 +3,7 @@ import { NumericData } from "../NumericData"
 import { Socials } from "../Socials"
 import styles from "./index.module.css"
 
-export const About = () => {
+export const About = ()=> {
     return (
         <div className={styles.about}>
             <h2 className={styles.title}>ABOUT ME</h2>
