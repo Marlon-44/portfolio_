@@ -1,4 +1,18 @@
 .container{
-    overflow: hidden;
     overflow-x: hidden;
+}
+.firstSection{
+    height: 170vh;
+    position: relative;
+}
+
+@media (max-width: 748px) {
+    .firstSection{
+        height: auto;
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+    }
 }
