@@ -11,9 +11,9 @@
     padding: 8px;
     position: fixed;
     z-index: 3;
-        background: rgba(255,255,255,.1);
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
+    background-color: #ffffff27;
+    backdrop-filter: blur(8px); /* borrosidad */
+    -webkit-backdrop-filter: blur(8px);
 }
 .headerTop{
     display: flex;
