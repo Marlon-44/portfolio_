@@ -1,0 +1,84 @@
+.about{
+    width: 50%;
+    margin-left: 11vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-bottom: 2rem ;
+}
+
+.about .title{
+    font-size: var(--title-font-size);
+    font-weight: var(--title-font-weight);
+    font-family: var(--title-font);
+    letter-spacing: var(--title-letter-spacing);
+    color: var(--title-font-color);
+    transform: scaleY(1.3)
+}
+
+.about .description{
+    font-size: var(--p-font-size);
+    color: var(--p-color);
+    font-weight: var(--p-font-wdight);
+    line-height: var(--p-line-height);
+    width: 80%;
+}
+
+.contactButton{
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+    padding: 5px ;
+    background-color: #fff;
+    border: 1px solid var(--primary-color);
+    border-radius: 5rem;
+    font-size: var(--subtitle-font-size);
+    font-weight: var(--title-font-weight);
+    font-family: var(--title-font);
+    color: var(--primary-color);
+    transform: scaleY(1.3) ;
+    width: 25%;
+    
+}
+.contactButton::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--primary-color);
+    transform: translateX(-100%);
+    transition: transform .4s cubic-bezier(.16,1,.3,1);
+    z-index: -2;
+    border-radius: 3rem;
+}
+.contactButton:hover::before{
+    transform: translateX(0);
+    
+}
+.contactButton:hover{
+    color: #fff;
+}
+
+@media(max-width:768px) {
+    .about{
+        width: 90%;
+        margin: auto;
+        margin-top: 3rem
+
+    }
+    .about .title{
+        font-size: 2rem;
+        letter-spacing: normal;
+    }
+    .about .description{
+        font-size: 5vw;
+        font-family: "Arimo", sans-serif;
+        width: 100%;
+    }
+    .contactButton{
+        align-self: center;
+        width: 50%;
+        background-color: var(--primary-color);
+        color: #fff;
+    }
+}

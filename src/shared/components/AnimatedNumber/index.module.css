@@ -1,0 +1,6 @@
+.number{
+    font-family: var(--title-font);
+    font-size: var(--title-font-size);
+    color: var(--primary-color);
+    font-weight: var(--title-font-weight);
+}

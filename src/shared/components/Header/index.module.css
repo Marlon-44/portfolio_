@@ -1,0 +1,289 @@
+.header {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 1rem;
+    margin: auto;
+    align-self: center;
+    border: 1px solid #e4e4e4;
+    border-radius: 3rem;
+    padding: 8px;
+    position: fixed;
+    z-index: 3;
+        background: rgba(255,255,255,.1);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+}
+.headerTop{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.logoContainer {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.logoImage {
+    object-fit: cover;
+    width: 100%;
+    position: relative;
+    top: -20%;
+
+}
+
+.headerNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navLinks {
+    display: flex;
+    list-style: none;
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: #555555;
+
+}
+
+.navLinks {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.cube_link {
+    position: relative;
+    display: inline-block;
+    transform-style: preserve-3d;
+    transition: transform .4s ease;
+    text-decoration: none;
+}
+
+.cube_link span {
+    display: block;
+    padding: 0;
+    backface-visibility: hidden;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.cube_link .front {
+    color: var(--secondary-color);
+    transform: translateZ(12px);
+}
+
+.cube_link .top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--primary-color);
+    transform: rotateX(-90deg) translateZ(12px);
+}
+
+.cube_link:hover {
+    transform: rotateX(90deg);
+}
+.contactButton{
+
+    position: relative;
+    overflow: hidden;
+    padding: 10px 20px;
+    border: 1px solid #bebebe;
+    border-radius: 3rem;
+    background: #303030;
+    color: white;
+    cursor: pointer;
+    z-index: 1;
+
+}
+
+.contactButton::before{
+
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--primary-color);
+    transform: translateX(-100%);
+    transition: transform .4s cubic-bezier(.16,1,.3,1);
+    z-index: -1;
+    border-radius: 3rem;
+
+}
+
+.contactButton:hover::before{
+    transform: translateX(0);
+
+}
+
+.headerAnnouncement {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+.greenCircle {
+    width: 10px;
+    height: 10px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.menuButton {
+    display: none;
+    width: 35px;
+    height: 35px;
+    border: none;
+    background-color: rgba(255,255,255,.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    position: relative;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.menuButton span {
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    background-color: #fff;
+    transition: .3s ease;
+}
+
+.menuButton span:first-child {
+    top: 12px;
+}
+
+.menuButton span:last-child {
+    top: 22px;
+}
+
+.active span:first-child {
+    top: 17px;
+    transform:
+        rotate(45deg);
+}
+
+.active span:last-child {
+
+    top: 17px;
+    transform:
+        rotate(-45deg);
+}
+
+.menuButton {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+.contactButton2 {
+    display: none;
+}
+
+@media(max-width:768px) {
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 80%;
+        margin: auto;
+        height: 60px;
+        padding: 0;
+        transition:
+            height .3s ease,
+            border-radius .3s ease,
+            width .3s ease-in-out;
+        
+        
+    }
+
+    .header.grow {
+        width: 85%;
+        height: 300px;
+        border-radius: 2rem;
+    }
+
+    .headerNav {
+        gap: 1rem;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+        width: 100%;
+    }
+    
+    .headerTop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        gap: 1rem;
+    }
+    
+    .menuButton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contactButton {
+        display: none;
+    }
+
+    .navLinks {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-20px);
+        pointer-events: none;
+        transition:
+            opacity .3s ease,
+            transform .3s ease,
+            visibility .3s ease;
+        background: rgba(255,255,255,.1);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        z-index: 2;
+    }
+
+    .navLinks.open {
+
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        pointer-events: all;
+    }
+    .contactButton2 {
+        display: block;
+        border: none;
+        background-color: var(--primary-color);
+        padding: 10px 20px;
+        width: 100%;
+        border-radius: 3rem;
+        font-size: 1rem;
+        color: #fff;
+    }
+
+}

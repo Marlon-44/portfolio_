@@ -1,0 +1,21 @@
+.infoContainer{
+    display: flex;
+    gap: 2rem;
+}
+.subtitle{
+    font-size: var(--subtitle-font-size);
+    color: var(--subtitle-color);
+    font-weight: var(--subtitle-font-weight);
+}
+.info{
+    font-size: var(--p-font-size);
+    color: var(--p-color);
+    font-weight: var(--p-font-wdight);
+    line-height: var(--p-line-height);
+}
+
+@media (max-width:768px) {
+    .infoContainer{
+        flex-direction: column;
+    }
+}
