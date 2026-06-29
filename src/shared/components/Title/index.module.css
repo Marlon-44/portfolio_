@@ -1,0 +1,14 @@
+.title{
+    font-size: var(--title-font-size);
+    font-weight: var(--title-font-weight);
+    font-family: var(--title-font);
+    letter-spacing: var(--title-letter-spacing);
+    color: var(--title-font-color);
+    transform: scaleY(1.3)
+}
+@media (max-width:748px){
+    .title{
+        font-size: 2rem;
+        letter-spacing: normal;
+    }
+}

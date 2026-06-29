@@ -1,0 +1,15 @@
+.description{
+    font-size: var(--p-font-size);
+    color: var(--p-color);
+    font-weight: var(--p-font-wdight);
+    line-height: var(--p-line-height);
+    width: 80%;
+}
+
+@media (max-width: 748px){
+    .description{
+        font-size: 5vw;
+        font-family: "Arimo", sans-serif;
+        width: 100%;
+    }
+}

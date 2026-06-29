@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "./index.module.css"
+import { Link } from "react-router-dom";
 
 
 export const Header = () => {
@@ -71,8 +72,7 @@ export const Header = () => {
                 </div>
 
 
-                <ul className={`${styles.navLinks} ${menuOpen ? styles.open : ""} ${showAnnouncement ? styles.hidden : ""
-                                    }`}>
+                <ul className={`${styles.navLinks} ${menuOpen ? styles.open : ""} ${showAnnouncement ? styles.hidden : ""}`}>
                     <li>
                         <a href="/" className={styles.cube_link}>
                             <span className={styles.front}>Home</span>
@@ -80,16 +80,16 @@ export const Header = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="/" className={styles.cube_link}>
+                        <Link to="/about" className={styles.cube_link}>
                             <span className={styles.front}>About</span>
                             <span className={styles.top}   >About</span>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="/" className={styles.cube_link}>
+                        <Link to="/projects" className={styles.cube_link}>
                             <span className={styles.front}>Projects</span>
                             <span className={styles.top}   >Projects</span>
-                        </a>
+                        </Link>
                     </li>
                     <li>
                         <a href="/" className={styles.cube_link}>
@@ -98,13 +98,13 @@ export const Header = () => {
                         </a>
                     </li>
                     <li>
-                        <button className={`${styles.contactButton2} ${menuOpen ? styles.active : ""}`}>Contact</button>
+                        <Link to="/contactme" className={`${styles.contactButton2} ${menuOpen ? styles.active : ""}`}>Contact</Link>
                     </li>
 
 
                 </ul>
 
-                <button className={styles.contactButton}>Contact</button>
+                <Link  to="/contactme" className={styles.contactButton}>Contact</Link>
 
 
             </nav>

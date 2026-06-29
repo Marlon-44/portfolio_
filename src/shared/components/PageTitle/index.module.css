@@ -1,0 +1,9 @@
+.title {
+    font-size: calc(7vw);
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: 'Oswald', sans-serif;
+    color: #303030;
+    letter-spacing: -7px;
+    transform: scaleY(1.3);
+}
