@@ -1,8 +1,8 @@
-:root{
+:root {
     --primary-color: #5E67E6;
     --secondary-color: #5c5c5c;
     --title-font: "Oswald";
-    --title-font-size: 4rem;
+    --title-font-size: 3rem;
     --title-font-weight: 500;
     --title-letter-spacing: -3px;
     --title-font-color: #303030;
@@ -10,22 +10,23 @@
 
 
     --subtitle-font-size: 1.2rem;
-    --subtitle-color: #303030;
+    --subtitle-color: #5c5c5c;
     --subtitle-font-weight: 600;
 
     --p-font-size: 1.2rem;
     --p-color: #5c5c5c;
     --p-font-weight: 100;
     --p-line-height: 1.5rem;
-    
+
 }
 
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Arimo", sans-serif;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Arimo", sans-serif;
 }
+
 /* Ancho de la barra */
 ::-webkit-scrollbar {
     width: 10px;

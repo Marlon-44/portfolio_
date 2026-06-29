@@ -23,7 +23,7 @@ export const Banner = () => {
                 <h1 className={styles.banner__title}>
                     DEVELOPER
                 </h1>
-
+                
                 <p className={styles.banner__subtitle2}>
                     I'm a Colombia-based Full Stack Web Developer building modern websites and web applications.
                 </p>

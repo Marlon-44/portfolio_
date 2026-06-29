@@ -1,5 +1,7 @@
 .container{
-    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 .firstSection{
     height: 170vh;
