@@ -8,7 +8,7 @@ type props ={
 
 export const Banner=({project}: props)=>{
     return(
-        <section>
+        <section className={styles.banner}>
             <Title title={project.title}/>
         </section>
     )
