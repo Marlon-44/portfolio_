@@ -1,8 +1,7 @@
 import { useParams } from "react-router-dom";
 import { projects } from "../../data/projects";
 import { Banner } from "./components/Banner";
-import styles from "./index.module.css"
-import { Title } from "../../shared/components/Title";
+import styles from "./index.module.css";
 import { Description } from "../../shared/components/Description";
 import { AllProjectsPagination } from "../../shared/components/AllProjectsPagination";
 import { FadeIn } from "../../shared/Animations/FadeInProps";
