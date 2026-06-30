@@ -1,9 +1,9 @@
 .description{
     font-size: var(--p-font-size);
     color: var(--p-color);
-    font-weight: var(--p-font-wdight);
+    font-weight: var(--p-font-weight);
     line-height: var(--p-line-height);
-    width: 80%;
+    width: 100%;
 }
 
 @media (max-width: 748px){

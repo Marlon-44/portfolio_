@@ -38,7 +38,7 @@ export const Header = () => {
         }
 
     }, []);
-    console.log(showAnnouncement)
+    
 
     return (
         <header className={`${styles.header} ${menuOpen ? styles.grow : ""}`}>

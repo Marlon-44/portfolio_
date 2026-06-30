@@ -3,6 +3,8 @@
     background-color: var(--primary-color);
     padding: 40px;
     color: #fff;
+    margin-top: 10vh;
+    border-radius: 2rem 2rem 0 0;
     
 }
 .infoSection{

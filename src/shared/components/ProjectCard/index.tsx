@@ -1,24 +1,28 @@
 import { Link } from "react-router-dom"
 import type { Project } from "../../../types/projects"
+import { Category } from "../Category"
+import { Description } from "../Description"
 import styles from "./index.module.css"
 
-type Props = {
+// Convención: 'Props' con mayúscula y más descriptivo si crece el archivo
+type ProjectCardProps = {
     project: Project
 }
-export const ProjectCard = ({ project }: Props) => {
-    console.log(project)
-    return (
-        <Link to={`/project/${project.id}`} className={styles.link}>
-            <div className={styles.cardContainer}
-                style={{ backgroundImage: `url(${project.image})` }}>
-                <div className={styles.overlay}></div>
-                <div className={styles.info}>
-                    <h3>{project.category}</h3>
-                    <h2 className={styles.title}>{project.title}</h2>
-                    <p>{project.description}</p>
-                </div>
-            </div>
-        </Link>
 
+export const ProjectCard = ({ project }: ProjectCardProps) => {
+    return (
+        <Link to={`/project/${project.id}`} className={styles.cardLink}>
+            {/* Cambiado div por article para mejor semántica */}
+            <article className={styles.cardContainer}>
+                <div className={styles.cardImage}>
+                    {/* Accesibilidad mejorada con un alt descriptivo */}
+                    <img src={project.image} alt={`Miniatura del proyecto ${project.title}`} />
+                </div>
+                
+                <Category category={project.category} />
+                <h2>{project.title}</h2>
+                <Description description={project.description} />
+            </article>
+        </Link>
     )
 }
