@@ -1,0 +1,10 @@
+.category{
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    font-weight: 400;
+    border: 1px solid var(--primary-color);
+    padding: 5px 10px;
+    width: fit-content;
+    border-radius: 4rem;
+    
+}

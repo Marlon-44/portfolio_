@@ -4,18 +4,23 @@ import styles from "./index.module.css"
 import { FlipCard } from "../../shared/components/FlipCard"
 import { FeaturedProjects } from "../../shared/components/FeaturedProjects"
 import { ContactForm } from "../../shared/components/ContactForm"
+import { FadeIn } from "../../shared/Animations/FadeInProps"
 
 export const Home = () => {
     return (
         <div className={styles.container}>
             <section className={styles.firstSection}>
-                <FlipCard/>
-                <Banner />
+
+                <FlipCard />
+                <FadeIn>
+                    <Banner />
+                </FadeIn>
+
                 <About />
             </section>
-            <FeaturedProjects/>
-            <ContactForm/>
+            <FeaturedProjects />
+            <ContactForm />
         </div>
-            
+
     )
 }

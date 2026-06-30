@@ -1,7 +1,28 @@
-.generalContainer{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+/* Reserva espacio de scroll: 100vh por cada card */
+.scrollTrack {
+    height: calc(var(--card-count) * 100vh);
+    position: relative;
+}
 
+/* Se queda pegado mientras estamos en el track */
+.stickyArea {
+    position: sticky;
+    top: 10vh;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Stack donde viven todas las cards */
+.stack {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Cada card ocupa todo el area sticky */
+.cardSlot {
+    position: absolute;
+    inset: 0;
+    will-change: transform, opacity;
+    transform-origin: top center;
 }

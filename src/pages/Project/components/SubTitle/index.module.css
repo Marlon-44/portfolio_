@@ -1,0 +1,8 @@
+.subtitle{
+    font-family: var(--title-font);
+    font-size: 2rem;
+    color: #303030;
+    transform: scaleY(1.3);
+    letter-spacing: var(--title-letter-spacing);
+    font-weight: 400;
+}

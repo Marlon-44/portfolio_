@@ -1,0 +1,19 @@
+.banner{
+    width: 100%;
+    margin: auto;
+    margin-top: 20vh;
+}
+
+
+.data{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.singleDataContainer p{
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+}
+.singleDataContainer h3{
+    color: var(--primary-color);
+}
